@@ -27,11 +27,12 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
-    height: '100vh', // Full viewport height
+    minHeight: '100vh', // Ensure it takes at least the full height of the viewport
     backgroundImage: 'url(/kirill-bogomolov-WH15dpm1F1E-unsplash.jpg)', // Correct path to the image in the public folder
     backgroundSize: 'cover', // Ensures the background covers the entire container
     backgroundPosition: 'center', // Centers the image
     backgroundAttachment: 'fixed', // Optional: Keeps the background fixed when scrolling
+    backgroundRepeat: 'no-repeat', // Avoid tiling if image is small
   },
   headerContainer: {
     padding: '50px',
@@ -39,25 +40,24 @@ const styles = {
   },
   header: {
     fontSize: '3em',
-    color: '#fff', // Use white color for better visibility on dark backgrounds
+    color: '#28a745', // Change to green
   },
   paragraph: {
     fontSize: '1.2em',
-    color: '#fff', // Use white color for better visibility on dark backgrounds
+    color: '#28a745', // Change to green
   },
   buttonContainer: {
     marginTop: '30px',
     flex: 1, // Make this container fill the remaining space
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'center', // Horizontally center buttons
     alignItems: 'center',
-    flexDirection: 'column', // Stack the buttons vertically
+    gap: '20px', // Add some space between the buttons
   },
   button: {
     backgroundColor: '#28a745',
     color: 'white',
     padding: '10px 20px',
-    margin: '10px',
     textDecoration: 'none',
     borderRadius: '5px',
     fontSize: '1em',

@@ -7,6 +7,7 @@ import ProgressTracker from "./pages/ProgressTracker";
 import Login from "./components/Auth/Login";
 import Signup from "./components/Auth/Signup";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 import CreateWorkoutPlan from "./pages/CreateWorkoutPlan";
 import MemberList from "./pages/MemberList";
 import Classes from "./pages/Classes";
